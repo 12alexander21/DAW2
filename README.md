@@ -21,8 +21,7 @@ It will work with languages such as:
 
 ---
 
-
-[PHP]: imagenes-readme//rsz_th.png
-[JS]: imagenes-readme//rsz_page-javascript.png
-[HTML]: imagenes-readme//rsz_html-web-page-icons-49310.png
-[CSS]: imagenes-readme//rsz_page-css.png
+[PHP]: imagenes-readme//rsz_th.png?raw=true
+[JS]: imagenes-readme//rsz_page-javascript.png?raw=true
+[HTML]: imagenes-readme//rsz_html-web-page-icons-49310.png?raw=true
+[CSS]: imagenes-readme//rsz_page-css.png?raw=true
