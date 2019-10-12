@@ -6,16 +6,16 @@
         h1 { text-align: center; }
     </style>
     <?php
-    /*Ejercicio 2.Escriba un programa que imprima por pantalla los cuadrados 
-    (el número multiplicado por sí mismo) de los 10 primeros números naturales.  */
+    /*Ejercicio 3.Modifique el ejercicio anterior para que muestre al lado de cada cuadrado si es un número par o impar.  */
     ?>
 </head>
 <body>
+    <h1>Ejercicio 3</h1>
     <?php
-    echo "<h1>Ejercicio 2</h1>";
     for ($i=1; $i <= 10; $i++) { 
-        echo "<h3>  $i   ² = " .  pow($i,2) . "</h3>";
-    }
+    ?>
+        <h3><?php echo $i ?> ² =  <?php echo pow($i,2) ?> </h3>
+    <?php }
     ?>
 </body>
 </html>
