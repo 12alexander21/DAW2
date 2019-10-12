@@ -7,8 +7,8 @@
     </style>
     <?php
     /*Ejercicio 3.Modifique el ejercicio anterior para que muestre al lado de cada cuadrado si es un número par o impar.  */
-    $potencia;
-    $texto;
+    $potencia; //Variable para guardar el valor de i$ al cuadrado
+    $texto; //Variable para guardar texto de si es o no par
     ?>
 </head>
 <body>
