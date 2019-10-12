@@ -9,7 +9,7 @@
     ?>
 </head>
 <body>
-    <h1>Tabla de multiplicar del <?php $numero ?> </h1>
+    <h1>Tabla de multiplicar del <?php echo $numero ?> </h1>
     <?php
     for ($i=1; $i <= 10; $i++) { 
     ?>
