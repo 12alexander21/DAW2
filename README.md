@@ -16,7 +16,7 @@ File and folders changes of DAW (Web Applications Development)'s second year wil
 It will work with languages such as:
 - PHP [photo-language-php][imagenes-readme\rsz_th.png]
 - JavaScript [photo-language-JS][imagenes-readme\rsz_page-javascript.png]
-- HTML Y CSS [photo-language-HTML][imagenes-readme\rsz_html-web-page-icons-49310.png]
+- HTML [photo-language-HTML][imagenes-readme\rsz_html-web-page-icons-49310.png]
 - CSS [photo-language-CSS][imagenes-readme\rsz_page-css.png]
 
 ---
