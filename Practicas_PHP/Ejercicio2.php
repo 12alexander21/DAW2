@@ -11,11 +11,12 @@
     ?>
 </head>
 <body>
-    <?php
-    echo "<h1>Ejercicio 2</h1>";
-    for ($i=1; $i <= 10; $i++) { 
-        echo "<h3>  $i   ² = " .  pow($i,2) . "</h3>";
-    }
-    ?>
+    <h1>Ejercicio 2</h1>
+        <?php
+        for ($i=1; $i <= 10; $i++) { 
+        ?>
+            <h3><?php echo $i ?>  ² = <?php echo pow($i,2) ?></h3>
+        <?php }
+        ?>
 </body>
 </html>
