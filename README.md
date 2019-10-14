@@ -1,5 +1,5 @@
 # Ciclo 2do DAW #
----
+===
 ### Español / Spanish ###
 Aqui se guardaran los cambios de los archivos y ficheros del curso DAW en el segundo año
 
@@ -10,6 +10,7 @@ Se trabajará con lenguajes como:
 - ![foto-lenguaje-CSS][CSS]
 - Y muchos más
 ---
+
 ### Inglés / English ###
 File and folders changes of DAW (Web Applications Development)'s second year will be saved here
 
