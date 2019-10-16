@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>Ejercicio 6</title>
     <?php
-        $meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+        $meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
         $meses_asociativo = ["1" => "Enero", "2" => "Febrero", "3" => "Marzo", "4" => "Abril", "5" => "Mayo", "6" => "Junio", "7" => "Julio", "8" => "Agosto", "9" => "Septiembre", "10" => "Octubre", "11" => "Noviembre", "12" => "Diciembre"];
     ?>
 </head>
 <body>
-    <h1>Ejercicio 5</h1>
+    <h1>Ejercicio 6</h1>
     <th><h3>Array indexado</h3></th>
     <table>
     <?php
