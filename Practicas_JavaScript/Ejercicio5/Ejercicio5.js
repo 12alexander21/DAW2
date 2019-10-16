@@ -5,12 +5,12 @@ var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', '
 let numDNI;
 let letraDNI;
 let resulResto;
-numDNI = prompt()
+numDNI = prompt("Introduzca el DNI sin la letra")
 
-if ((numDNI > 0 || numDNI < 99999999)){
-    letraDNI = prompt();
+if (numDNI > 0 || numDNI < 99999999){
+    letraDNI = prompt("Introduzca la letra de su DNI");
     resulResto = numDNI % 23;
-    if (letraDNI[resulResto] == letraDNI){
+    if (letras[resulResto] == letraDNI){
         alert("El número y la letra del DNI son correctos");
     }
     else{
