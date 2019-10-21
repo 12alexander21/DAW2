@@ -6,10 +6,10 @@ let resultado = "";
 document.write("<br><h3>Área del cuadrado</h3><hr>");
 
 cuadrado = prompt("Introduzca el lado de un cuadrado");
-areaCuadrado = Math.pow(cuadrado, 2);
+resultado = cuadrado * 4;
 
 document.write("<h4>Lado del cuadrado = " + cuadrado + "</h4>");
-document.write("<h4>Área del cuadrado = " + areaCuadrado + "</h4>");
+document.write("<h4>Perímetro del cuadrado = " + resultado + "</h4>");
 /************************************************************************************* */
 
 let numeros = 0;
