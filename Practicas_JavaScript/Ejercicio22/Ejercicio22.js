@@ -9,7 +9,7 @@ document.write("<br><h3>Serie de números</h3><hr>");
 
 document.write("<p>Serie > </p><b>")
 
-for (let i = 0; i <= 134; i++) {
+for (let i = 0; i <= 25; i++) {
     if (num.toString().length > aumento.toString().length){
         aumento += cantidadAumento;
         cantidadAumento *= 10;
