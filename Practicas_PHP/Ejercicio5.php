@@ -24,7 +24,8 @@
     <hr>
     <h1 class="h1">Tabla de multiplicar del <?php echo $numeroForm ?> con POST</h1>
     <form action="Ejercicio5.php" method="post" class="form-inline">
-        Numero: <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" type="number" name="numero">
+        <label>Numero: </label>
+        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" type="number" name="numero" placeholder="Introduzca un número">
         <input type="submit" value="Enviar">
     </form>
     <?php
