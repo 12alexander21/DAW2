@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>Ejercicio 5</title>
     <?php
-    $numero = $_GET["num"];
-    $numeroForm;
-    isset($_POST["numero"])? $numeroForm = $_POST["numero"] : $numeroForm = 0;
-    if ($numero == null) $numero = 4;
+
+    $numero = 0;
+    (isset($_GET["num"]) && is_numeric($_GET["num"]))? $numero = $_GET["num"]: $numero = 0;
+    $numeroForm = 0;
+    (isset($_POST["numero"]) && is_numeric($_POST["numero"]))? $numeroForm = $_POST["numero"] : $numeroForm = 0;
 
     ?>
 </head>
