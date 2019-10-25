@@ -8,10 +8,14 @@
     <title>Ejercicio 16</title>
     <?php
         $cadena = "";
-        !(isset($_GET["cadena"]))
+        /*if (isset($_GET["cadena"])){
+            if (strlen)
+        }*/
+        !isset($_GET["cadena"]) && empty($_GET["cadena"])? $cadena = $_GET["cadena"] : $cadena = "texto en minusculas" ;
     ?>
 </head>
 <body>
     <h1>Autocompletado de cadena</h1>
+        <p>Cadena > <strong><?php echo strtoupper($cadena) ?></strong></p>
 </body>
 </html>
