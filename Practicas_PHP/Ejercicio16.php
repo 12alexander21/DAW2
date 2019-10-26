@@ -8,10 +8,13 @@
     <title>Ejercicio 16</title>
     <?php
         $cadena = "";
-        /*if (isset($_GET["cadena"])){
-            if (strlen)
-        }*/
-        !isset($_GET["cadena"]) && empty($_GET["cadena"])? $cadena = $_GET["cadena"] : $cadena = "texto en minusculas" ;
+        if (!isset($_GET["cadena"])){
+            $_GET["cadena"] = "texto de relleno";
+        }
+        
+        $varCadena = $_GET["cadena"];
+        
+        (isset($varCadena) && !empty($varCadena))? $cadena = "" : $cadena = "texto en minusculas" ;
     ?>
 </head>
 <body>
