@@ -1,8 +1,8 @@
 "use-strict";
 
-const num = 8;
-let aumento = 2;
-let resultado = num;
+const num = 8; //Constante para la multiplicacion con el aumento
+let aumento = 2; //Variable para hacer la serie
+let resultado = num; //Variable para almacenar el valor de la operacion de num * resultado
 
 document.write("<br><h3>Serie de números</h3><hr>");
 
