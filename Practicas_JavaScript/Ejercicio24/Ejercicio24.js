@@ -5,6 +5,8 @@ let nota = 0;
 let mayoresSiete = 0;
 let menoresSiete = 0;
 
+document.write("<br><h3>Múltiplos de 8</h3><hr>");
+
 for (let cadaNota = 0; cadaNota < 10; cadaNota++) {
     nota = prompt("Nota del alumno " + (cadaNota + 1));
     if (isNaN(nota) || nota.length == 0){

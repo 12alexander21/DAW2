@@ -4,6 +4,8 @@ let alturas = [];
 let altura = 0;
 let promedio = 0;
 
+document.write("<br><h3>Altura promedio</h3><hr>");
+
 for (let cadaAltura = 0; cadaAltura < 5; cadaAltura++) {
     altura = prompt("Altura en cm | Persona Nº " + (cadaAltura + 1));
     if (isNaN(altura)){
