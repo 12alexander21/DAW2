@@ -1,5 +1,8 @@
 "use-strict";
-
+/**
+ * 25. Se ingresan un conjunto de 5 alturas de personas por teclado.
+ *  Mostrar la altura promedio de las personas.
+ */
 let alturas = [];
 let altura = 0;
 let promedio = 0;

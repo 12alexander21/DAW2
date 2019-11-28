@@ -1,5 +1,9 @@
 "use-strict";
-
+/**
+ * 12.Realizar un programa que lea por teclado dos números, si el primero
+ *  es mayor al segundo informarsu suma y diferencia, en caso contrario
+ *  informar el producto y la división del primero respecto al segundo.
+ */
 let num1 = 0;
 let num2 = 0;
 

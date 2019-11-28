@@ -1,5 +1,8 @@
 "use-strict";
-
+/**
+ * Realizar un programa que lee una calificación numérica entre 0 y 10 y
+ *  la transforma en calificación alfabética, escribiendo el resultado
+ */
 let nota = Number(prompt("Introduzca el número con la que realizar la operación"));
 let result = "";
 

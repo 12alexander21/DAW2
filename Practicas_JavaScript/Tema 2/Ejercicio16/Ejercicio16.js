@@ -1,5 +1,10 @@
 "use-strict";
-
+/**
+ * 16.De un postulante a un empleo que realizó un test de capacitación,
+ *  se obtuvo la siguiente información: nombre del postulante, cantidad
+ *  total de preguntas que se le realizaron y cantidad de preguntas que
+ *  contestó correctamente.
+ */
 let nombre = "";
 let numPreguntas = 0;
 let numCorrectas = 0;

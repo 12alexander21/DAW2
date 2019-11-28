@@ -1,9 +1,15 @@
 "use-strict";
-
+/**
+ * A partir del siguiente array que se proporciona:var valores = [true, 5, false, "hola", "adios", 2];
+ * 1.Determinar cuál de los dos elementos de texto es mayor
+ * 2.Utilizando exclusivamente los dos valores booleanos del array, determinar los operadores
+ *  necesarios para obtener un resultado true y otro resultado false
+ * 3.Determinar el resultado de las cinco operaciones matemáticas realizadas
+ *  con los dos elementos numéricos.
+ */
 let valores = [true, 5, false, "hola", "adios", 2];
 let longitudMayor = 0; //Guarda la longitud de la cadena más larga del array
 let textoMayor
-//let 
 let numeroA = 0, numeroB = 0;
 
 for (let i = 0; i < valores.length; i++) {

@@ -1,5 +1,13 @@
 "use-strict";
-
+/**
+ * En el mismo fichero, sabiendo que cuando desplazamos 1 bit a la derecha dividimos
+ *  entre 2 y si lo desplazamos a la izquierda multiplicamos por 2, mostrar también
+ *  el resultado de las siguientes operaciones:
+ * ➢125  / 8 =
+ * ➢40 x 4 =
+ * ➢25 / 2 =
+ * ➢10 x 16 = 
+ */
 document.write("<table border=20%>");
 document.write("<tr>");
 document.write("<th>TABLA DE MULTIPLICAR DEL 7</th>");

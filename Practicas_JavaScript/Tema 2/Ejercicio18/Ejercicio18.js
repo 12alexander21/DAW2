@@ -1,5 +1,9 @@
 "use-strict";
-
+/**
+ * 18.Se ingresan por teclado tres números, si todos los valores ingresados
+ *  son menores a 10, imprimir en la página la leyenda
+ *  ' Todos los números son menores a diez'.
+ */
 let num1 = 0, num2 = 0, num3 = 0;
 
 document.write("<br><h3>Menores a 10</h3><hr>");

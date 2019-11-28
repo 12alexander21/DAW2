@@ -1,5 +1,7 @@
 "use-strict";
-
+/**
+ * 14.Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
+ */
 let num1 = 0, num2 = 0, num3 = 0;
 
 num1 = prompt("Introduzca el primer número");

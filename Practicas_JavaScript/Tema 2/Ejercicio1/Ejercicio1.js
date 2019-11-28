@@ -1,5 +1,9 @@
 "use-strict";
-
+/*
+ *Realizar una pequeña aplicación JavaScript que muestre las tablas de multiplicar del 7, 8 y 9
+  usando los tres tipos de bucles vistos. La  idea es representar las tablas de multiplicar en
+   forma  de tabla web con  cuatro  columnas dejando la cuarta libre.
+  */ 
 document.write("<table>");
 document.write("<tr>");
 document.write("<th>TABLA DE MULTIPLICAR DEL 7</th>");

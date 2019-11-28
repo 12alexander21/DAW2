@@ -1,5 +1,9 @@
 "use-strict";
-
+/**
+ * 31. Realizar un programa que acumule (sume) valores ingresados por teclado hasta ingresa el 9999
+ * (no sumar dicho valor, solamente indica que ha finalizado la carga).
+ * Imprimir el valor acumulado e informar si dicho valor es cero, mayor a cero o menor a cero.
+ */
 let num = 0;
 let numPorTeclado = 0;
 

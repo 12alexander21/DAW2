@@ -1,5 +1,9 @@
 "use-strict";
-
+/**
+ * 22.Realizar un programa que imprima 25 términos de la serie 11 -22 -33 -44, etc.
+ *  (No se ingresan valores por teclado).
+ *  Cuando se llegan a las trescifras la serie será de la forma 111, 222, 333, ...
+ */
 let aumento = 11; //Variable que suma a num
 let cantidadAumento = 100; //Variable que incrementa a aumento en función de num
 let num = 11; //Variable usada para la secuencia

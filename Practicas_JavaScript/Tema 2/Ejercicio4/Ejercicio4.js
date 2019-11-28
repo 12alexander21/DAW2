@@ -1,5 +1,7 @@
 "use-strict";
-
+/**
+ * Completar las condiciones de los if del siguiente script para que los mensajes de
+ *  los alert() se muestren siempre de forma correcta: */
 let numero1 = 5;
 let numero2 = 8;
 

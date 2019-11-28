@@ -1,5 +1,11 @@
 "use-strict";
-
+/**
+ * 34. Confeccionar un programa que lea 3 pares de datos,
+ *  cada par de datos corresponde a la medida de la base y la altura de un triángulo.
+ *  El programa deberá informar:
+ * a. De cada triángulo la medida de su base, su altura y su superficie.
+ * b. La cantidad de triángulos cuya superficie es mayor a 12.
+ */
 let base = Array(3);
 let altura = Array(3);
 let superficie = Array(3);

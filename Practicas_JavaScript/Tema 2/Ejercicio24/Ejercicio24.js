@@ -1,5 +1,7 @@
 "use-strict";
-
+/**
+ * 23.Mostrar los múltiplos de 8 hasta el valor 500. Debe apareceren pantalla 8 -16 -24, etc.
+ */
 let notas = [];
 let nota = 0;
 let mayoresSiete = 0;

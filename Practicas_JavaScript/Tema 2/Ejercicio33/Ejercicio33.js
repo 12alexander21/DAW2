@@ -1,4 +1,9 @@
 "use-strict";
+/**
+ * 33. Se realizó un censo provincial y se desea procesar la información obtenida en dicho censo.
+ *  De cada una de las personas censadas se tiene la siguiente información: número de documento,
+ *  edad y sexo ('femenino' o * 'masculino').
+ */
 let numeroDocumento = "", edad = 0, sexo = ""; //Variables para comprobar el valor introducido
 let totalPersonas = 0, totalVarones = 0, totalMujeres = 0, totalAdultos = 0; //Suma total del saldo
 let dniReg = RegExp(/^\d{8}[A-Z]$/);

@@ -1,5 +1,8 @@
 "use-strict";
-
+/**
+ * 30. Desarrollar un programa que permita cargar 5 números enteros 
+ * y luego nos informe cuántos valores fueron pares y cuántos impares.
+ */
 let numeros = [];
 let num = 0;
 let cantidadPares = 0;

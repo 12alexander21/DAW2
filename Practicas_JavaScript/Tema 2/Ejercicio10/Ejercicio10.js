@@ -1,5 +1,15 @@
 "use-strict";
-
+/**
+ * 10.Codificar los siguientes apartados:
+ * a.Realizar la carga del lado de un cuadrado, mostrar por pantalla el
+ *  perímetro del mismo (El perímetro de un cuadrado se calcula multiplicando
+ *  el valor del lado por cuatro). 
+ * b.Escribir  un  programa  en  el cual  se  ingresen cuatro  números, calcular e
+ *   informar la  suma  de los  dos primeros y el producto del tercero y el cuarto.
+ * c.Realizar un programa que lea cuatro valores numéricos e informar su suma y producto.
+ * d.Se debe desarrollar un programa que pida el ingreso del precio de un artículo y
+ *  la cantidad de estos que lleva el cliente. Mostrar lo que debe abonar el comprador.
+ */
 let cuadrado = "";
 let resultado = "";
 

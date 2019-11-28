@@ -1,4 +1,10 @@
 "use-strict";
+/**
+ * 32. En un banco se procesan datos de las cuentas corrientes de sus clientes.
+ *  De cada cuenta corriente se conoce: número de cuenta, nombre del cliente y saldo actual.
+ *  El ingreso de datos debe finalizar al ingresar un valor negativo
+ * en el número de cuenta.
+ */
 let nombre = "", saldo = 0, numeroCC = 0; //Variables para comprobar el valor introducido
 let numerosCuentas = [], nombresClientes = [], saldos = []; //Arrays para almacenar los datos
 let sumaSaldo = 0; //Suma total del saldo

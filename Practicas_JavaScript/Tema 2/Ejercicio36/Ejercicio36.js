@@ -1,5 +1,11 @@
 "use-strict";
-
+/**
+ * 36. Realizar un programa que lea los lados de 4 triángulos, e informar:
+ * a. De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados iguales),
+ *  isósceles (dos lados iguales), o escaleno (ningún lado igual)
+ * b. Cantidad de triángulos de cada tipo.
+ * c. Tipo de triángulo del que hay menor cantidad.
+ */
 let lados = Array(3);
 let menorTriangulo = [Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE];
 let tipoTriangulo = Array(4);

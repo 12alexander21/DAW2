@@ -1,5 +1,14 @@
 "use-strict";
-
+/**
+ * 11.Confeccionar el siguiente código:
+ * a.Se  ingresan  tres  notas  de  un  alumno,  si  el  promedio es  mayor
+ *   o  igual  a  siete mostrar  el  mensaje 'Promocionado'.
+ *  Tener en cuenta que para obtener el promedio debemos operar suma=nota1+nota2+nota3;
+ *  y luego hacer promedio=suma/3;
+ * b.Solicitar que se ingrese dos veces una clave. Mostrar un mensaje si son
+ *  iguales (tener en cuenta que para ver si dos variables tienen el mismo valor
+ *  almacenado debemos utilizar el operador ==).
+ */
 let notas = [];
 let promedio = 0;
 

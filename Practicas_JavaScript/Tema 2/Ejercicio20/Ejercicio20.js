@@ -1,5 +1,8 @@
 "use-strict";
-
+/**
+ * 20.De un operario se conoce su sueldo y los años de antigüedad.
+ *  Se pide confeccionar un programa que lea los datos de entrada e informe
+ */
 let sueldo = 0 ;
 let antiguedad = 0;
 let cambioSueldo = "";

@@ -1,5 +1,8 @@
 "use-strict";
-
+/**
+ * 17.Realizar un programa que pida cargar una fecha cualquiera y luego
+ *  verificar si dicha fecha corresponde a Navidad
+ */
 let fecha = "";
 const fechaNavidad = new Date(2019, 11, 25);
 

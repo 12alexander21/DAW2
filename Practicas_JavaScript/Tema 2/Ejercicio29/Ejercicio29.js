@@ -1,5 +1,9 @@
 "use-strict";
-
+/**
+ * 29. Realizar un programa que permita cargar dos listas de 3 valores cada una.
+ * Informar con un mensaje cuál de las dos
+ * listas tiene un valor acumulado mayor (mensajes 'Lista 1 mayor', 'Lista 2 mayor', 'Listas iguales').
+ */
 let lista1 = [], lista2 = [];
 let sumLista1 = 0, sumLista2 = 0;
 let num1 = 0, num2 = 0;
