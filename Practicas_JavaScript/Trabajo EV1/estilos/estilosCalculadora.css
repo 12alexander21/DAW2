@@ -1,0 +1,42 @@
+.calculadora{
+    user-select: none;
+    background-color: #000;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.estilo{
+
+    text-align: center;
+    background-color: #355b69fd;
+    padding: 1em;
+    border: 100% solid #000;
+    
+    width: 30px;
+    color: white;
+}
+
+#pantalla{
+    background-color: #4b6168;
+    border-radius: 5px;
+    text-align: right;
+
+}
+
+button{
+    outline: hidden;
+    border-color: #000;
+    border-width: 3px;
+}
+
+button:hover{
+    background-color: #5c8797fd;    
+}
+
+button:active{
+    background-color: #719dadfd;
+}
+
+.cero, .uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho, .nueve{
+    background-color: #c21212;
+}
