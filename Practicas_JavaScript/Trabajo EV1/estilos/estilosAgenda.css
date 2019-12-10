@@ -1,0 +1,22 @@
+.agenda{    
+    padding: 1rem;
+    
+}
+
+body
+{
+    background-image: url("fondo1.png");
+    background-color: #cccccc;
+}
+
+.table {
+
+    background-color: #000000;
+}
+
+
+input#entrada {
+    margin-right: 1%;
+    width: 49%;
+    border-radius: 3px;
+}

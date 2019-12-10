@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="estilos/estilosAgenda.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="mx-auto" onload="carga()">
+    <div class="agenda container-fluid">
+        <div class="muestra d-flex justify-content-around">
+            <div class="container registro text-center" id="controles">
+                <br>
+                <button id="principioLista" class="btn btn-secondary"><<</button>
+                <button id="atrasLista" class="btn btn-secondary"><</button>
+                <b id="textoControles"> 1 de 3 </b>
+                <button id="delanteLista" class="btn btn-secondary">></button>
+                <button id="finalLista" class="btn btn-secondary">>></button>
+            </div>
+            <div class="col-6 mostrar">
+                <b>Nº Entrada</b>
+                <div class="input-group">
+                    <input id="entrada" type="text" class="form-control" name="" min="1" maxlength="3">
+                    <button id="verRegistro" class="btn btn-secondary">Ver</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="edicion">
+            <br>
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="cNombre" placeholder="Ej: Pablo" maxlength="100">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" class="form-control" id="cApellidos" placeholder="Ej: Rodríguez Caballero">
+                  </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="telefono">Teléfono</label>
+                      <input type="text" class="form-control" id="cTelefono" placeholder="Ej: 612345678" pattern="[67][0-9]{8}" maxlength="9">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="fecha">Fecha de nacimiento</label>
+                      <input type="text" class="form-control" id="cFecha" placeholder="Ej: 01/12/2000" pattern="^([012][1-9]|3[01])\/(0[1-9]|1[0-2])\/(\d|[1-9][0-9]|[1-9]\d+)$" maxlength="10">
+                    </div>
+                  </div>
+              </form>
+
+            <div class="botones">
+                <button id="guardarRegistro" class="btn btn-primary" type="button">Guardar</button>
+                <button id="crearRegistro" class="btn btn-success" type="button">Nuevo</button>
+                <button id="borrarRegistro" class="btn btn-danger" type="button">Borrar</button>
+            </div>
+            
+            
+        
+        </div>
+        <hr>
+        <div class="resumen table-responsive">
+            <table class="table table-striped table-hover table-bordered text-center" id="tabla">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Teléfono</th>
+                        <th>Fecha de nacimiento</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Carga de scripts js -->
+    <script src="scripts/clasePersona.js"></script>
+    <script src="scripts/agenda.js"></script>
+    <!-- ------------------- -->
+</body>
+
+</html>

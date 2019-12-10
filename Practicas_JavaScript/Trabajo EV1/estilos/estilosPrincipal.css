@@ -1,12 +1,11 @@
-
-* {
-    box-sizing: border-box;
+img{
+    width: 100%;
 }
-
-
-.footer{
-    text-align: left;
-    margin: 35em 0 0 10em;
-    border: 3px solid black;
-    display: grid;
+body
+{
+    background-size:100%;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    overflow-y: hidden;
 }

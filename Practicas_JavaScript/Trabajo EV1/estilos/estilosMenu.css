@@ -15,7 +15,7 @@ body {
     height: fit-content;
     object-fit: fill;
     margin: auto;
-    background-color: #355b69fd;
+    background-color: #40855dfd;
     box-sizing: border-box;
 }
 
@@ -45,13 +45,9 @@ img{
 }
 
 .primero:hover, .segundo:hover{
-    background-color:  #2f4a53fd;
+    background-color:  #3a6d4ffd;
 }
 
 .primero:active, .segundo:active{
-    box-shadow: 0 3px 50px #00823f;
-}
-
-@media (min-width: 500px){
-    
+    box-shadow: 0 3px 50px #272727;
 }

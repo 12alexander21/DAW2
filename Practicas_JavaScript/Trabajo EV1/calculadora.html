@@ -19,53 +19,53 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body class="mx-auto">
+<body class="mx-auto" onload="carga()">
     <div class="row d-flex justify-content-center">
         <div class="calculadora col-4 m-5 p-4 text-center">
 
             <div class="row px-1 py-1">
-                <label type="text" id="pantalla" class="estilo col-12">0123456789</label>
+                <label type="text" id="pantalla" class="estilo col-12">0</label>
             </div>
 
-            <div class="teclas">
+            <div id="teclas">
                 <div class="row px-1 py-1">
-                    <button class="col-3 estilo fraccion" onclick="">1/x</button>
-                    <button class="col-3 estilo raiz" onclick="">√</button>
-                    <button class="col-3 estilo porcentaje" onclick="">%</button>
-                    <button class="col-3 estilo cambio" onclick="">±</button>
+                    <button class="col-3 estilo fraccion" id="fraccion">1/x</button>
+                    <button class="col-3 estilo raiz" id="raiz">√</button>
+                    <button class="col-3 estilo porcentaje" id="porcentaje">%</button>
+                    <button class="col-3 estilo cambio" id="cambio">±</button>
                 </div>
                 <div class="row px-1 py-1">
-                    <button class="col-3 estilo borrar" onclick="">←</button>
-                    <button class="col-3 estilo borrarentrada" onclick="">CE</button>
-                    <button class="col-3 estilo borrartodo" onclick="">C</button>
-                    <button class="col-3 estilo division" onclick="">/</button>
+                    <button class="col-3 estilo borrar" id="borrar">←</button>
+                    <button class="col-3 estilo borrarentrada" id="borrarentrada">CE</button>
+                    <button class="col-3 estilo borrartodo" id="borrartodo">C</button>
+                    <button class="col-3 estilo division" id="division">/</button>
                 </div>
                 <div class="row px-1 py-1">
-                    <button class="col-3 estilo siete" onclick="">7</button>
-                    <button class="col-3 estilo ocho" onclick="">8</button>
-                    <button class="col-3 estilo nueve" onclick="">9</button>
-                    <button class="col-3 estilo multiplicacion" onclick="">x</button>
+                    <button class="col-3 estilo siete" id="siete">7</button>
+                    <button class="col-3 estilo ocho" id="ocho">8</button>
+                    <button class="col-3 estilo nueve" id="nueve">9</button>
+                    <button class="col-3 estilo multiplicacion" id="multiplicacion">x</button>
                 </div>
                 <div class="row px-1 py-1">
-                    <button class="col-3 estilo cuatro" onclick="">4</button>
-                    <button class="col-3 estilo cinco" onclick="">5</button>
-                    <button class="col-3 estilo seis" onclick="">6</button>
-                    <button class="col-3 estilo resta" onclick="">-</button>
+                    <button class="col-3 estilo cuatro" id="cuatro">4</button>
+                    <button class="col-3 estilo cinco" id="cinco">5</button>
+                    <button class="col-3 estilo seis" id="seis">6</button>
+                    <button class="col-3 estilo resta" id="resta">-</button>
                 </div>
                 <div class="row px-1 py-1">
-                    <button class="col-3 estilo uno" onclick="">1</button>
-                    <button class="col-3 estilo dos" onclick="">2</button>
-                    <button class="col-3 estilo tres" onclick="">3</button>
-                    <button class="col-3 estilo suma" onclick="">+</button>
+                    <button class="col-3 estilo uno" id="uno">1</button>
+                    <button class="col-3 estilo dos" id="dos">2</button>
+                    <button class="col-3 estilo tres" id="tres">3</button>
+                    <button class="col-3 estilo suma" id="suma">+</button>
                 </div>
                 <div class="row px-1 py-1">
-                    <button class="col-6 estilo cero" onclick="">0</button>
-                    <button class="col-3 estilo coma" onclick="">,</button>
-                    <button class="col-3 estilo igual" onclick="">=</button>
+                    <button class="col-6 estilo cero" id="cero">0</button>
+                    <button class="col-3 estilo coma" id="coma">.</button>
+                    <button class="col-3 estilo igual" id="igual">=</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="scripts/calculadora.js"></script>
 </body>
-
 </html>
