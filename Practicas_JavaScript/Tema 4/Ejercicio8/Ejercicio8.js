@@ -10,19 +10,24 @@ document.write("<h3>Detección del formato de cadena</h3><hr>");
 
 cadena = prompt("Introduzca una cadena de texto");
 
-document.write(`La cadena ${cadena} está formada ${verFormato(cadena)}`)
+document.write(`<p>La cadena <b>${cadena}</b> está formada <b>${verFormato(cadena)}</b></p>`)
 
 
 function verFormato(cadena) {
     let resultado = "";
 
-    if (/^[A-Z]*$/.test(cadena)){
+    if (/^[A-Z]+$/.test(cadena)){
         resultado = "solo por mayúsculas";
     }
-    else if (/^[a-z]*$/.test(cadena)){
+    else if (/^[a-z]+$/.test(cadena)){
         resultado = "solo por minúsculas";
     }
-    else resultado = "tanto por mayúsculas como por minúsculas";
-    if (/^\d*$/.test(cadena))
+    else if (/^[a-zA-Z]+$/.test(cadena)){
+        resultado = "tanto por mayúsculas como por minúsculas";
+    }
+    else {
+        resultado = "por caracteres distintos a letras";
+    }
+
     return resultado
 }

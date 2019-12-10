@@ -1,7 +1,8 @@
 
-let nuevaVentana
-let nombreCompleto, nombre;
-let fecha = new Date();
+let nuevaVentana //Variable tipo ventana que usaremos para escribir en él
+let nombreCompleto; //nombreCompleto almacena el nombre y los apellidos
+let nombre;
+let fecha = new Date(); //Objeto Date para almacenar la fecha de nacimiento introducida
 
 function llamada() {
     let java;
@@ -23,11 +24,11 @@ function llamada() {
 document.write("<h1>TAREA DWEC03</h1><hr>");
 nombreCompleto = prompt("Introduzca su nombre y apellidos");
 nombre = nombreCompleto.split(" ", 1).toString();
-fecha.setDate(parseInt(prompt("Introduzca DIA de nacimiento")));
+fecha.setDate(parseInt(prompt("Introduzca DÍA de nacimiento")));
 fecha.setMonth(parseInt(prompt("Introduzca MES de nacimiento")) - 1);
 fecha.setFullYear(parseInt(prompt("Introduzca AÑO de nacimiento")));
 
-document.write(`Buenos dias <b>${nombre}</b><br>
+document.write(`Buenos días <b>${nombre}</b><br>
                 Tu nombre tiene ${nombre.length} caracteres, incluidos espacios<br>
                 La primera letra A de tu nombre está en la posición: ${nombre.indexOf("a")}<br>
                 La última letra A de tu nombre está en la posición: ${nombre.lastIndexOf("a")}<br>
@@ -41,7 +42,7 @@ document.write(`Buenos dias <b>${nombre}</b><br>
 
 
 function obtenerEdad(fecha) {
-    let diferenciaMs = Date.now() - fecha.getTime();
-    let fechaAno = new Date(diferenciaMs);
+    let diferenciaMs = Date.now() - fecha.getTime(); //Obtiene la diferencia en milisegundos de la fecha actual a la introducida
+    let fechaAno = new Date(diferenciaMs); //Crea un nuevo objeto date usando como parámetro los milisegundos
     return Math.abs(fechaAno.getUTCFullYear() - 1970);
 }
