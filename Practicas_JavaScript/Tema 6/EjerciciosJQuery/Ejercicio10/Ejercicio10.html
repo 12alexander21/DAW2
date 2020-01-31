@@ -15,12 +15,8 @@
 <body>
     <script type="text/javascript">
         function colorear() {
-            $("tr").each(function(index, element) {
-                if (index % 2 === 0)
-                    $(element).css("background-color","red");
-                else
-                    $(element).css("background-color","green");
-            })
+            $("tr:odd").css("background-color","red");
+            $("tr:even").css("background-color","green");
         }
         
     </script>
