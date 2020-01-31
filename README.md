@@ -1,5 +1,4 @@
 # Ciclo 2do DAW #
-===
 ### Español / Spanish ###
 Aqui se guardaran los cambios de los archivos y ficheros del curso DAW en el segundo año
 
