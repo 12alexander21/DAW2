@@ -1,0 +1,30 @@
+<!-- 
+14. Utiliza los métodos focus() y blur() para cambiar el color de dos cuadros de texto cuando
+posicionamos el foco y cuando lo retiramos.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 14 JQuery</title>
+</head>
+<body>
+
+    <input type="text">
+    <input type="text">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("input").focus(function() {
+                $(this).css("background-color", "red");
+            })
+            $("input").blur(function () {
+                $(this).css("background-color", "green");
+            })
+        });
+    </script>
+</body>
+</html>

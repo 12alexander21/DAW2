@@ -1,0 +1,56 @@
+<!-- 
+15. Crea un documento con dos tag div, dentro de cada uno de los cuales debe haber un botón para esconder dichos tag.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 15 JQuery</title>
+</head>
+<body>
+    <style>
+
+        .zona {
+            background-color: darkkhaki;
+            
+        }
+        .zona > * {
+            margin: 0.5em;
+        }
+    </style>
+
+    <h2>Entrenamiento en isla</h2>
+        <div class="zona">
+            <button id="boton1">Escóndeme</button>
+            <div id="esconderPrimero">
+                <p>Contacto: Helen Bennet</p>
+                <p>Garden House Crowther Way</p>
+                <p>Londres</p>
+            </div>
+        </div>
+    
+    <h2>Especialidades en París</h2>
+        <div class="zona">            
+            <button id="boton2">Escóndeme</button>
+            <div id="esconderSegundo">
+                <p>Contacto: Marie Bertrand</p>
+                <p>256, Bulevar Charonne</p>
+                <p>París</p>
+            </div>
+        </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("button#boton1").click(function (){
+                $("div#esconderPrimero").hide();
+            });
+            $("button#boton2").click(function (){
+                $("div#esconderSegundo").hide();
+            });
+        });
+    </script>
+</body>
+</html>

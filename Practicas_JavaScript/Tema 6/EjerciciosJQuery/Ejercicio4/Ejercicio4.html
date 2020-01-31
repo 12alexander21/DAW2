@@ -1,0 +1,28 @@
+<!-- 
+4. Realiza el mismo código que en el script 3 pero ahora selecciona dicho párrafo mediante otro
+selector. p:first
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 4 JQuery</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        function esconder() {
+            $("p:first").hide();    
+        }
+        
+    </script>
+
+    <header class="intro">Encabezado</header>
+    <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum explicabo id repudiandae sed eos ipsam facilis commodi est sint, aperiam blanditiis mollitia distinctio voluptates? Consectetur illum doloremque earum animi quia.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum explicabo id repudiandae sed eos ipsam facilis commodi est sint, aperiam blanditiis mollitia distinctio voluptates? Consectetur illum doloremque earum animi quia.</p>
+    <button onclick="esconder();">Esconder botón</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>

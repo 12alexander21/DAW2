@@ -1,0 +1,27 @@
+<!-- 
+11. Crear un documento con un párrafo, el cuál se oculte al clicar dos veces sobre él.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 11 JQuery</title>
+    
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eos tempora repellat non ullam quam porro deserunt iusto, culpa aspernatur! Doloremque ad architecto reiciendis, aliquam nemo aut perspiciatis voluptatem ab suscipit sint provident illum mollitia voluptas neque reprehenderit. Soluta fugiat nesciunt enim asperiores. Deserunt dolores commodi placeat ullam? Et voluptate voluptates quae praesentium ipsam eaque enim reprehenderit natus. Nihil deleniti unde eveniet, illum vel, est dicta non numquam facilis, voluptatum qui ea laborum harum placeat magni vitae facere quisquam exercitationem? Perferendis modi sunt deleniti dolorem doloribus illo quisquam possimus! Quae reiciendis iusto fugiat ipsa itaque. Deserunt officia suscipit quibusdam delectus.
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            let parrafo = $("p");
+            parrafo.dblclick(function() {
+                parrafo.hide();
+            }); 
+        }); 
+    </script>
+</body>
+</html>

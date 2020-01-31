@@ -1,0 +1,43 @@
+<!-- 
+5. Selecciona el primer elemento de la primera lista y oculta dicho elemento.
+Lista 1:
+    ● Tortilla
+    ● Jamón
+    ● Queso
+Lista 2:
+    ■ Coca Cola
+    ■ Leche
+    ■ Té
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 5 JQuery</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        function esconder() {
+            $("li:first").hide();    
+        }
+        
+    </script>
+    <h3>Lista 1:</h3>
+    <ul>
+        <li>Tortilla</li>
+        <li>Jamón</li>
+        <li>Queso</li>
+    </ul>
+    <h3>Lista 2:</h3>
+    <ul>
+        <li>Coca Cola</li>
+        <li>Leche</li>
+        <li>Té</li>
+    </ul>
+    <button onclick="esconder();">Esconder botón</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>

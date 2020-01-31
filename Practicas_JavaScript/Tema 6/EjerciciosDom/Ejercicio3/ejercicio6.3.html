@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejercicio 13 - DOM b�sico y atributos XHTML</title>
+
+<script type="text/javascript">
+function anade() {
+	let texto = `${document.getElementById("lista").childElementCount + 1} elemento de la lista`; //creamos el texto del siguiente elemento de la lista
+	let listaDesordenada = document.getElementById("lista");
+	let nodoTexto = document.createTextNode(texto); //creamos el nodo de texto
+	let item = document.createElement("li");
+
+	item.appendChild(nodoTexto); //agregamos al nuevo item de la lista el texto
+	listaDesordenada.appendChild(item); //agregamos el nuevo hijo al final de la lista
+}
+</script>
+</head>
+
+<body><script type="text/javascript">
+//<![CDATA[
+try{(function(a){var b="http://",c="librosweb.es",d="/cdn-cgi/cl/",e="img.gif",f=new a;f.src=[b,c,d,e].join("")})(Image)}catch(e){}
+//]]>
+</script>
+
+<ul id="lista">
+	<li>Lorem ipsum dolor sit amet</li>
+	<li>Consectetuer adipiscing elit</li>
+	<li>Sed mattis enim vitae orci</li>
+	<li>Phasellus libero</li>
+	<li>Maecenas nisl arcu</li>
+</ul>
+
+<input type="button" value="Añadir elemento" onclick="anade();">
+
+</body>
+</html>

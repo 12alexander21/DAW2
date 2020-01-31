@@ -1,0 +1,34 @@
+<!-- 
+8. Crea un documento con dos enlaces y dos botones. Uno se tiene que abrir en una nueva
+ventana (target="_blank") y el otro no. Cada botón debe ocultar uno de los enlaces en función 
+de su atributo target 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 8 JQuery</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        function esconder(enlace) {
+            if (enlace === 'uno')
+                $("a[target=_blank]").hide();    
+            else
+                $("a[target=_self]").hide();
+        }
+        
+    </script>
+    <a href="http://www.google.es" target="_blank">Ventana nueva</a>
+    <br/><br/>
+    <a href="http://www.google.es" target="_self">Ventana actual</a>
+    <br/><br/>
+    <button onclick="esconder('uno');">Esconder enlace 1</button>
+    <br/><br/>
+    <button onclick="esconder('dos');">Esconder enlace 2</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>

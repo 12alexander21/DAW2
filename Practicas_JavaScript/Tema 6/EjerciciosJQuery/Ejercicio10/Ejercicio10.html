@@ -1,0 +1,89 @@
+<!-- 
+10. Crear un documento con una tabla. Poner el fondo de las filas pares en rojo (usar el método
+.css("background-color","red"). A continuación poner el fondo de las filas impares en verde
+..css("background-color","green")
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 10 JQuery</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        function colorear() {
+            $("tr").each(function(index, element) {
+                if (index % 2 === 0)
+                    $(element).css("background-color","red");
+                else
+                    $(element).css("background-color","green");
+            })
+        }
+        
+    </script>
+    <table border="1px">
+        <tr>
+            <td>Lorem 1</td>
+            <td>Lorem 1</td>
+            <td>Lorem 1</td>
+            <td>Lorem 1</td>
+            <td>Lorem 1</td>
+            <td>Lorem 1</td>
+        </tr>
+        <tr>
+            <td>Lorem 2</td>
+            <td>Lorem 2</td>
+            <td>Lorem 2</td>
+            <td>Lorem 2</td>
+            <td>Lorem 2</td>
+            <td>Lorem 2</td>
+        </tr>
+        <tr>
+            <td>Lorem 3</td>
+            <td>Lorem 3</td>
+            <td>Lorem 3</td>
+            <td>Lorem 3</td>
+            <td>Lorem 3</td>
+            <td>Lorem 3</td>
+        </tr>
+        <tr>
+            <td>Lorem 4</td>
+            <td>Lorem 4</td>
+            <td>Lorem 4</td>
+            <td>Lorem 4</td>
+            <td>Lorem 4</td>
+            <td>Lorem 4</td>
+        </tr>
+        <tr>
+            <td>Lorem 5</td>
+            <td>Lorem 5</td>
+            <td>Lorem 5</td>
+            <td>Lorem 5</td>
+            <td>Lorem 5</td>
+            <td>Lorem 5</td>
+        </tr>
+        <tr>
+            <td>Lorem 6</td>
+            <td>Lorem 6</td>
+            <td>Lorem 6</td>
+            <td>Lorem 6</td>
+            <td>Lorem 6</td>
+            <td>Lorem 6</td>
+        </tr>
+        <tr>
+            <td>Lorem 7</td>
+            <td>Lorem 7</td>
+            <td>Lorem 7</td>
+            <td>Lorem 7</td>
+            <td>Lorem 7</td>
+            <td>Lorem 7</td>
+        </tr>
+    </table>
+    <br/>
+    <button onclick="colorear();">Colorear tabla</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
