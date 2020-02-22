@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Bingo</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 bg-warning p-3">
+          <div class="form-group">
+            <label>Número de jugadores</label>
+            <input
+              type="number"
+              class="form-control"
+              id="numeroJug"
+              min="5"
+              max="20"
+              placeholder="5"
+              maxlength="2"
+            />
+          </div>
+          <div class="form-group">
+            <label>Valor del cartón</label>
+            <select id="valorCarton" class="custom-select">
+              <option value="1">1 €</option>
+              <option value="2">2 €</option>
+              <option value="3">3 €</option>
+              <option value="4">4 €</option>
+              <option value="5">5 €</option>
+            </select>
+          </div>
+          <input
+            id="comenzar"
+            class="btn btn-primary"
+            type="button"
+            value="¡Comenzar!"
+          />
+        </div>
+        <div class="col-10 bg-danger ">
+          <div class="container-fluid bg-warning ">
+            <div class="row">
+              <div class="col-6 p-3">
+                <!-- <div class="fixed-bottom"> -->
+                <div class="outer-circle">
+                  <div class="inner-circle">
+                    <h1 class="inside-content">9</h1>
+                  </div>
+                </div>
+                <!-- </div> -->
+              </div>
+              <div class="col-6 bg-primary posicion-btn">
+                <input type="button" class="btn btn-bingo" value="¡BINGO!" />
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid bg-secondary">
+            <table id="tablaCarton" class="estiloCarton" align="center">
+              
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="pre-scrollable">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/claseCarton.js"></script>
+    <script src="scripts/script.js"></script>
+    
+  </body>
+</html>
