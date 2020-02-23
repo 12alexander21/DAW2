@@ -8,10 +8,12 @@
 }
 */
 body {
-  font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+  font-family: "Fredoka One", Arial, Helvetica, sans-serif;
 }
 /* BOLA */
 .outer-circle {
+  margin-left: auto;
+  margin-right: 20%;
   background: #4ac44a;
   border-radius: 50%;
   height: 125px;
@@ -35,39 +37,47 @@ body {
 }
 /*******/
 /* CARTON */
-table {
-  width: 100%;
-}
 .estiloCarton {
-  border: solid 10px black;
-  overflow: hidden;
-  justify-content: flex-end;
+  display: table;
+  /* width: 80%; */
+  float: none;
+  position: relative;
+  margin: 0 auto;
 }
 
 .estiloCarton td {
-  border: solid 10px black;
+  border: solid 7px black;
   background-color: #ffffff;
   color: red;
-  font-size: 250%;
-  padding: 20px;
+  font-size: 300%;
+  padding: 5px;
   text-align: center;
-  
+  user-select: none;
 }
+
 .estiloCarton td:hover {
-    background-color: rebeccapurple;
+  background-color: rebeccapurple;
 }
+
 .estiloCarton td:active {
-    background-color: red;
+  background-color: red;
 }
+
 .posicionFila td {
-    max-height: 3em;
+  max-height: 3em;
   overflow: hidden;
+}
+.cartonesOrdenador {
+  width: calc(50% - 10px);
 }
 /**********/
 .btn-bingo {
-  position: absolute;
+  /*position: absolute;
   right: 30%;
-  bottom: 5%;
+  bottom: 5%;*/
+  display: block;
+  margin:0 auto;
+  margin-top: 5%;
   width: 200px;
   height: 100px;
   font-size: 300%;
@@ -79,3 +89,28 @@ table {
   
 }
 
+
+#bombo {
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+.filaBombo td {
+  color: #dddddd;
+  background-color: #810000;
+  text-align: center;
+  border-radius: 90%;
+  padding: 5px;
+}
+/*
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+table, td {
+    border: 1px solid black;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 5px;
+}
+*/
