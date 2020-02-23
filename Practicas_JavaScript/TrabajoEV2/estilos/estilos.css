@@ -10,6 +10,9 @@
 body {
   font-family: "Fredoka One", Arial, Helvetica, sans-serif;
 }
+/*.pre-scollable .container-fluid {
+  max-height: 400px;
+}*/
 /* BOLA */
 .outer-circle {
   margin-left: auto;
@@ -37,6 +40,9 @@ body {
 }
 /*******/
 /* CARTON */
+td.casillaTapada{
+  background-color: #92151b !important;
+}
 .estiloCarton {
   display: table;
   /* width: 80%; */
@@ -49,10 +55,12 @@ body {
   border: solid 7px black;
   background-color: #ffffff;
   color: red;
-  font-size: 300%;
+  font-size: 250%;
   padding: 5px;
   text-align: center;
   user-select: none;
+  width: 70px;
+  white-space: nowrap;
 }
 
 .estiloCarton td:hover {
@@ -70,6 +78,12 @@ body {
 .cartonesOrdenador {
   width: calc(50% - 10px);
 }
+
+
+#impar ,#par {
+  padding: 2% !important;
+}
+
 /**********/
 .btn-bingo {
   /*position: absolute;
@@ -89,7 +103,7 @@ body {
   
 }
 
-
+/* BOMBO */
 #bombo {
   margin: auto;
   border-collapse: separate;
@@ -102,6 +116,7 @@ body {
   border-radius: 90%;
   padding: 5px;
 }
+/*********/
 /*
 table {
     border-collapse: separate;
