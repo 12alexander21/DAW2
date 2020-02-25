@@ -13,13 +13,16 @@ body {
 }
 .pre-scrollable {
   overflow-x: hidden;
-  
+  max-height: 400px;
+}
+.pre-scrollable::-webkit-scrollbar {
+  width: 0px;
 }
 /* BOLA */
 .outer-circle {
   margin-left: auto;
   margin-right: 20%;
-  background: #4ac44a;
+  background: #c01922;
   border-radius: 50%;
   height: 125px;
   width: 125px;
@@ -27,7 +30,7 @@ body {
 
 .inner-circle {
   position: relative;
-  background: #ffffffd0;
+  background: #ffffff;
   border-radius: 50%;
   height: 100px;
   width: 100px;
@@ -38,13 +41,17 @@ body {
 .inside-content {
   text-align: center;
   position: relative;
-  top: 25px;
+  top: 15px;
+  font-family: "Luckiest Guy","Fredoka One", Arial, Helvetica, sans-serif;
+  color: #d80101;
+  font-size: 350%;
+  user-select: none;
 }
 /*******/
 /* CARTON */
 td.seleccionado {
-  background-color: #448fbb;
-  opacity: 0.5;
+  background-color: #b94c4c !important;
+  opacity: 1;
 }
 
 td.casillaTapada{
@@ -71,7 +78,7 @@ td.casillaTapada{
 }
 
 .estiloCarton td:hover {
-  background-color: rebeccapurple;
+  background-color: #8d8d8d9b;
 }
 
 .posicionFila td {
@@ -79,11 +86,13 @@ td.casillaTapada{
   overflow: hidden;
 }
 
-
+.cartonesMaquina {
+  border: 5px solid black;
+  border-radius: 15px;
+}
 
 #impar ,#par {
   padding: 2% !important;
-  margin-bottom: 20px;
 }
 
 /**********/
@@ -103,6 +112,14 @@ td.casillaTapada{
   align-items: center;
   justify-content: center;
   
+}
+
+.modal {
+  font-size: 10px !important;
+}
+
+.modal-header {
+  justify-content: unset !important;
 }
 
 /* BOMBO */
