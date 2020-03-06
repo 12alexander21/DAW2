@@ -20,7 +20,7 @@ var bombo = {
 
   comenzarJuego: function() {
 
-    if ($("#numeroJug").val()) {
+    if ($("#numeroJug").val()) { //Chequea si se ha cambio el valor del input
       this.cantidadJugadores = $("#numeroJug").val();
     } else {
       this.cantidadJugadores = $("#numeroJug").attr("value");
@@ -75,7 +75,7 @@ var bombo = {
 
   crearGrid: function() {
     let numerosBombo = "";
-    let numeros = this.bolas.slice(0);
+    let numeros = this.bolas.slice(0); //Pasamos todas las bolas a la variable
 
     let numerosFormateado = [];
 
@@ -100,7 +100,6 @@ var bombo = {
       .slideUp(800)
       .fadeOut(500);
     $(".seccionBombo").fadeIn(800);
-    //$("#comenzar").prop("disabled", true);
 
     $("#bingoBtn").click(function() {
       bombo.detenerJuego();
@@ -112,7 +111,7 @@ var bombo = {
 
     $("#cerrarModal").click(function() {
       $("#cartel").modal("hide");
-      if (this.hayGanador === false){
+      if (bombo.hayGanador == false){
         bombo.crearIntervalo();
       }
     });
@@ -126,7 +125,7 @@ var bombo = {
   crearCartones: function() {
     for (let i = 0; i < this.cantidadJugadores - 1; i++) {
       this.cartonesOrdenador.push(new claseCarton());
-      this.mostrarCartones(this.cartonesOrdenador[i].carton, i);
+      this.mostrarCartones(this.cartonesOrdenador[i].carton, i); //pasamos el carton creado y el indice
     }
   },
 
@@ -146,7 +145,7 @@ var bombo = {
     nuevoCarton += `</table>`;
     nuevoCarton += `</br></br>`;
 
-    if (columna % 2 === 0) {
+    if (columna % 2 === 0) { //si el indice es par se pondra el carton aqui
       $("#par").append(nuevoCarton);
     } else {
       $("#impar").append(nuevoCarton);
@@ -179,7 +178,7 @@ var bombo = {
 
   detenerJuego: function() {
     clearInterval(this.intervalo);
-    bombo.comprobarCarton(-1);
+    bombo.comprobarCarton(-1); //-1 porque asi sabemos que el "ganador" no es la máquina
   },
 
   actualizarCartones: function(bola) {
@@ -218,10 +217,11 @@ var bombo = {
     if (carton !== -1) {
       clearInterval(this.intervalo);
       tituloModal = "Lo sentimos";
-      cuerpoModal = `El ganador ha sido el cartón ${carton + 1}`; //Introducir premio?
+      cuerpoModal = `El ganador ha sido el cartón ${carton + 1}`;
       $("#titulo").text(tituloModal);
       $("#cuerpo").text(cuerpoModal);
       $("#cartel").modal("show");
+      $("#bingoBtn").prop('disabled', true);
       this.hayGanador = true;
       
     } else {
@@ -261,6 +261,7 @@ var bombo = {
           $("#titulo").text(tituloModal);
           $("#cuerpo").text(cuerpoModal);
           $("#cartel").modal("show");
+          $("#bingoBtn").prop("disabled", true);
           this.hayGanador = true;
         }
       }
